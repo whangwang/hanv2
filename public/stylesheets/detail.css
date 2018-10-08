@@ -1,0 +1,59 @@
+.detailTitle{
+    width: calc( 50% - 15px );
+    float: left;
+}
+.detailTitle>p{
+    color: gray;
+    width: 95%;
+    margin-top: 30px;
+}
+.detailInfo{
+    width: calc( 50% - 45px );
+    float: right;
+    padding: 15px;
+    border: 1px solid #DDAE2C;
+    margin-top: 30px;
+}
+.detailInfo table{
+    width: 100%;
+}
+.detailInfo td{
+    height: 37px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.detailInfo th{
+    text-align: left;
+    height: 37px;
+    padding-left: 15px;
+    font-size: 14px;
+    vertical-align: top;
+    padding-top: 5.5px;
+}
+.detailTitleBanner{
+    margin-top: 60px;
+}
+.detailTitleContainer{
+    display: inline-block;
+    width: 100%;
+}
+.detailContentContainer{
+    width: calc( 100% - 60px );
+    border: 1px solid gray;
+    min-height: 200px;
+    padding: 30px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.detailContent{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+body{
+    background-color: #EAEAEA;
+}
+.decoCircle{
+    display: none;
+}

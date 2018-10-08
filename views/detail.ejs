@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%- include('layout/includeHeader') %>
+    <link rel="stylesheet" href="/stylesheets/display.css">
+    <link rel="stylesheet" href="/stylesheets/detail.css">
+  </head>
+  <body>
+    <div class="cateNavbar">
+        <div>
+                <img description="首頁" to="/" src="/images/icon-main.svg" alt="">
+                <img description="網頁開發" to="/list/webdev"" src="/images/icon-coding.svg" alt="">
+                <img description="介面設計" to="/list/uidesign" src="/images/icon-ui.svg" alt="">
+                <img description="平面設計" to="/list/graphic" src="/images/icon-design.svg" alt="">
+                <img description="標準字設計" to="/list/typography" src="/images/icon-typo.svg" alt="">
+        </div>
+        <img src="/images/icon-menu.svg" alt="">
+    </div>
+    <div id="cursor"></div>
+    <div class="decoCircle"></div>
+    <div class="smallDeco"></div>
+    <div class="grid-container">
+        <div class="detailTitleBanner">
+            <div class="cateTitle"><%= data.Title %><hr></div>
+        </div>
+        <div class="detailTitleContainer">
+                <div class="detailTitle">
+                        <p><%= data.Description %></p>
+                    </div>
+                    <div class="detailInfo">
+                        <table>
+                            <% for(let i = 0; i < data.Info.length; i++){ %>
+                                <tr>
+                                    <th><%= data.Info[i].Name %></th>
+                                    <td><%- data.Info[i].Content %></td>
+                                </tr>
+                            <% } %>
+                        </table>
+                    </div>
+        </div>
+        <div class="detailContentContainer">
+            <div class="detailContent">
+                <%- content %>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).on('click','.cateNavbar>div>img',function(){
+            window.location = $(this).attr('to');
+        });
+    </script>
+  </body>
+</html>

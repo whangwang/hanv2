@@ -1,0 +1,20 @@
+#cateTitleSection{
+    width: 100vw;
+    height: 100vh;
+    display: table;
+}
+#cateTitleSection>div{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+#cateTitleSection>div>div{
+    display: inline-block;
+    text-align: left;
+}
+#cateTitleSection>div>div>.decoButton{
+    width: 100%;
+}
+#cateTitleSection>div>div>.decoButton button{
+    width: 100%;
+}

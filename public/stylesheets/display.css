@@ -1,0 +1,137 @@
+.detailContent{
+    width: 100%;
+    max-width: 800px;
+    padding: 45px 15px 45px 15px;
+    margin: auto;
+}
+  
+.detailContent img{
+    width: 80%;
+    margin-left: 10%;
+}
+  
+.detailContent h5{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: gray;
+    font-weight: 800;
+ }
+  
+.detailContent h4{
+    font-size: 21px;
+    font-weight: 800;
+    color: black;
+}
+  
+.detailContent p{
+    font-weight: 400;
+    line-height: 22.5px;
+}
+  
+.detailContent h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+  
+.half-img{
+    margin-top: 60px;
+}
+  
+.half-img img:first-of-type{
+    float: left;
+}
+  
+.half-img img{
+    width: 35%;
+}
+  
+.half-img h5{
+    margin-top: 20px;
+}
+  
+.half-with-text{
+    display: inline-block;
+}
+  
+.half-with-text .text{
+    width: calc( 50% - 7.5px );
+    float: left;
+    margin-top: -15px;
+}
+  
+.half-with-text img{
+    width: calc( 50% - 7.5px );
+    float: right;
+    margin-left: 0px;
+}
+  
+.webview-display{
+    display: inline-block;
+}
+  
+.webview-display img:first-of-type{
+    width: calc( 70% - 7.5px );
+    float: left;
+    margin-left: 0px;
+}
+  
+.webview-display img:last-of-type{
+    width: calc( 30% - 7.5px );
+    float: right;
+    margin-left: 0px;
+}
+  
+@media (max-width: 992px){
+    .detailContent img{
+      width: 100%;
+      margin-left: 0px;
+    }
+
+    .half-img{
+      margin-top: 60px;
+    }
+  
+    .half-img img:first-of-type{
+      float: left;
+      margin-right: 30px;
+    }
+  
+    .half-img img{
+      width: calc( 50% - 15px );
+    }
+  
+    .half-img h5{
+      margin-top: 20px;
+    }
+}
+  
+@media (max-width: 768px){
+    .webview-display img:first-of-type{
+      width: 100%;
+      margin-left: 0px;
+      float: unset;
+    }
+    .webview-display img:last-of-type{
+      width: 100%;
+      margin-left: 0px;
+      float: unset;
+    }
+    .half-with-text .text{
+      float: unset;
+      width: 100%;
+      margin-top: 0px;
+      margin-bottom: 15px;
+    }
+    .half-img img:last-of-type{
+      margin-top: 20px;
+    }
+    .detailContent img{
+      width: 100%;
+      margin-left: 0px;
+    }
+    .detailContent {
+      padding: 45px 0px 45px 0px;
+    }
+}

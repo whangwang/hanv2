@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%- include('layout/includeHeader') %>
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <div class="decoCircle"></div>
+    <div class="smallDeco"></div>
+    <span class="navPromptText"></span>
+    <div class="navbar">
+      <img class="select" description="首頁" to="home" src="/images/icon-main.svg" alt="">
+      <img description="網頁開發" to="webdev" src="/images/icon-coding.svg" alt="">
+      <img description="介面設計" to="uidesign" src="/images/icon-ui.svg" alt="">
+      <img description="平面設計" to="graphic" src="/images/icon-design.svg" alt="">
+      <img description="標準字設計" to="typography" src="/images/icon-typo.svg" alt="">
+      <img description="關於我" to="about" src="/images/icon-about.svg" alt="">
+    </div>
+    <div id="fullpage">
+      <div class="section on" id="firstSection">
+          <div class="logoContainer">
+              <img class="mainLogo" src="/images/full-han.svg"" alt="">
+          </div>
+          <div class="decoContainer">
+              <img src="/images/circleLine.svg" alt="">
+              <div class="scrollPrompt" to="webdev">
+                <p>作品集</p>
+                <svg version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 17 12" style="enable-background:new 0 0 17 12;" xml:space="preserve">
+                  <path id="path" class="st0" d="M0,3.5c4.7-4.7,12.3-4.7,17,0L8.5,12L0,3.5z"/>
+                </svg>
+              </div>
+          </div>
+      </div>
+      <div class="section">
+        <div class="sectionContainer new">
+          <img src="/images/webDevelopment.png" alt="" class="catePreview">
+          <div class="cateTitle">網頁&nbsp;&nbsp;開發<hr></div>
+          <div class="cateEngTitle">Web<br>Development</div>
+          <div class="decoButton">
+            <button to="webdev">查看全部</button>
+            <div></div>
+          </div>
+          <div class="scrollPrompt" to="uidesign" style="width: 100%; margin-top: 15vh;">
+              <p>介面設計</p>
+              <svg version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 17 12" style="enable-background:new 0 0 17 12;" xml:space="preserve">
+                <path id="path" class="st0" d="M0,3.5c4.7-4.7,12.3-4.7,17,0L8.5,12L0,3.5z"/>
+              </svg>
+            </div>
+        </div>
+      </div>
+      <div class="section">
+          <div class="sectionContainer new">
+            <img src="/images/uidesign.png" alt="" class="catePreview">
+            <div class="cateTitle">介面&nbsp;&nbsp;設計<hr></div>
+            <div class="cateEngTitle">UI<br>Design</div>
+            <div class="decoButton">
+              <button to="uidesign">查看全部</button>
+              <div></div>
+            </div>
+            <div class="scrollPrompt" to="graphic" style="width: 100%; margin-top: 15vh;">
+                <p>平面設計</p>
+                <svg version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 17 12" style="enable-background:new 0 0 17 12;" xml:space="preserve">
+                  <path id="path" class="st0" d="M0,3.5c4.7-4.7,12.3-4.7,17,0L8.5,12L0,3.5z"/>
+                </svg>
+              </div>
+          </div>
+      </div>
+      <div class="section">
+          <div class="sectionContainer new">
+            <img src="/images/graphicdesign.jpg" alt="" class="catePreview">
+            <div class="cateTitle">平面&nbsp;&nbsp;設計<hr></div>
+            <div class="cateEngTitle">Graphic<br>Design</div>
+            <div class="decoButton">
+              <button to="graphic">查看全部</button>
+              <div></div>
+            </div>
+            <div class="scrollPrompt" to="typography" style="width: 100%; margin-top: 15vh;">
+                <p>標準字設計</p>
+                <svg version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 17 12" style="enable-background:new 0 0 17 12;" xml:space="preserve">
+                  <path id="path" class="st0" d="M0,3.5c4.7-4.7,12.3-4.7,17,0L8.5,12L0,3.5z"/>
+                </svg>
+              </div>
+          </div>
+      </div>
+      <div class="section">
+          <div class="sectionContainer new">
+            <img src="/images/typography.png" alt="" class="catePreview">
+            <div class="cateTitle">標準字&nbsp;&nbsp;設計<hr></div>
+            <div class="cateEngTitle">Typography<br>Design</div>
+            <div class="decoButton">
+              <button to="typography">查看全部</button>
+              <div></div>
+            </div>
+            <div class="scrollPrompt" to="about" style="width: 100%; margin-top: 15vh;">
+                <p>關於我</p>
+                <svg version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 17 12" style="enable-background:new 0 0 17 12;" xml:space="preserve">
+                  <path id="path" class="st0" d="M0,3.5c4.7-4.7,12.3-4.7,17,0L8.5,12L0,3.5z"/>
+                </svg>
+              </div>
+        </div>
+      </div>
+      <div class="section">
+          <div class="sectionContainer new">
+            <img src="/images/self.svg" alt="" class="catePreview self" style="width: 20%;float: left;padding: 45px;">
+            <div style="float: right;display: inline-block;width: calc( 80% - 150px );">
+              <div class="cateTitle">關於&nbsp;&nbsp;我<hr></div>
+              <div class="cateEngTitle">About Me</div>
+              <p style="font-size: 15px;margin-top: 30px;">嗨，我是王瀚，政大資訊科學系的學生。<br>主要接觸領域在網頁前後端開發、UI設計以及視覺設計。<br><br>程式方面，對於網頁開發部分特別有興趣，也有兩年的網頁學習/練習經驗跟一年的網頁開發。<br><br>設計方面，由於自己興趣的關係，從高中開始就陸續學習設計工具如PS,AI,大學後比較有對設計觀念的提升，開始協助學校活動做平面設計，並自己有練習學習標準字&Logo設計。而關於UI設計的部分從大二進新創公司實習後開始慢慢的成長，現在對於UI設計也有一定的敏感度。<br><br>如果對作品有任何疑問，或有想要合作、洽詢等，歡迎寄Email聯絡！</p>
+              <a href="mailto:whangwang0430@gmail.com" class="emailLink">Email<svg version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 17 12" style="enable-background:new 0 0 17 12;" xml:space="preserve">
+                  <path id="path" class="st0" d="M0,3.5c4.7-4.7,12.3-4.7,17,0L8.5,12L0,3.5z"/>
+                </svg></a>
+              <p style="margin-top: 0px;">whangwang0430@gmail.com</p>
+            </div>
+         </div>
+      </div>
+    </div>
+    <script>
+      $(document).on('click','.scrollPrompt, .navbar>img',function(){
+        window.location = "#"+$(this).attr('to');
+      });
+      $(document).on('click','.sectionContainer button',function(){
+        window.location = "/list/"+$(this).attr('to');
+      });
+      $(document).ready(function() {
+	      $('#fullpage').fullpage({
+          scrollingSpeed: 1000,
+          anchors: ['home', 'webdev', 'uidesign', 'graphic', 'typography', 'about'],
+          onLeave: function(origin, destination, direction){
+            if(origin.index==0){
+              $('.decoCircle').addClass('huge');
+              $('.smallDeco').addClass('show');
+            }else if(destination.index==0){
+              $('.decoCircle').removeClass('huge');
+              $('.smallDeco').removeClass('show');
+            }
+            $('.section').eq(origin.index).removeClass('on');
+            $('.section').eq(destination.index).addClass('on');
+            $('.section').eq(destination.index).find('.fp-tableCell>.sectionContainer').removeClass('new');
+            $('.section').eq(origin.index).find('.fp-tableCell>.sectionContainer').addClass('new');
+            $('.navbar>img').removeClass('select');
+            $('.navbar').find('img').eq(destination.index).addClass('select');
+            console.log(destination.index);
+          }
+        });
+      });
+      $('.navbar>img').hover(function(){
+        $('.navPromptText').text($(this).attr('description'));
+        $('.navPromptText').css('left',$(this).offset().left + (( 50 - $('.navPromptText').width() - 12 ) / 2));
+        $('.navPromptText').css('top',$(this).offset().top + 60);
+        $('.navPromptText').css('opacity','1');
+      },function(){
+        $('.navPromptText').css('opacity','0');
+      });
+    </script>
+  </body>
+</html>

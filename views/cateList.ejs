@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%- include('layout/includeHeader') %>
+    <link rel="stylesheet" href="/stylesheets/list.css">
+  </head>
+  <body>
+    <div class="cateNavbar">
+        <div>
+            <img description="首頁" to="/" src="/images/icon-main.svg" alt="">
+            <% if(cate!="webdev"){ %><img description="網頁開發" to="/list/webdev"" src="/images/icon-coding.svg" alt=""><% } %>
+            <% if(cate!="uidesign"){ %><img description="介面設計" to="/list/uidesign" src="/images/icon-ui.svg" alt=""><% } %>
+            <% if(cate!="graphic"){ %><img description="平面設計" to="/list/graphic" src="/images/icon-design.svg" alt=""><% } %>
+            <% if(cate!="typography"){ %><img description="標準字設計" to="/list/typography" src="/images/icon-typo.svg" alt=""><% } %>
+        </div>
+        <img src="/images/icon-menu.svg" alt="">
+    </div>
+    <div id="cursor"></div>
+    <div class="decoCircle"></div>
+    <div class="smallDeco"></div>
+    <div id="cateFullpage">
+        <div id="cateTitleSection">
+            <div>
+                <div>
+                    <div class="cateTitle"><%- cateTitle %><hr></div>
+                    <div class="cateEngTitle"><%- cateEngTitle %></div>
+                    <div class="decoButton">
+                      <button>下拉查看作品</button>
+                      <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolioContent" style="overflow: scroll!important;">
+            <div class="grid-container">
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <% for(let i = 0; i < data.length;i++){ %>
+            <div class="grid-item">
+				<a href="<% if(cate=='typography' || cate=='graphic'){ %><%= data[i].og.Url %><% }else{ %>/detail/<%= data[i].index %><% } %>">
+                    <div class="info">
+                        <h5><%= data[i].og.Title %></h5>
+                        <p><%= data[i].og.Description %></p>
+                    </div>
+				    <img src="<%= data[i].og.Cover %>" />
+				</a>
+            </div>
+            <% } %>
+        </div>
+    </div>
+        </div>
+    </div>
+    <script>
+        let lastscroll = 0;
+        $(document).on('click','.decoButton>button',function(){
+            $("html, body").animate({ scrollTop: $(window).height() }, 1000);
+        });
+        $(document).on('click','.cateNavbar>div>img',function(){
+            window.location = $(this).attr('to');
+        });
+        $(document).ready(function(){
+          var $grid = $('.grid').masonry({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            gutter: 30
+          });
+          $(window).scroll(function(){
+              let perc = $(window).scrollTop()/$(window).height();
+              console.log(perc);
+              if(perc>0.3){
+                  $('.decoCircle').addClass('huge');
+                  $('.smallDeco').addClass('show');
+              }else{
+                  $('.decoCircle').removeClass('huge');
+                  $('.smallDeco').removeClass('show');
+              }
+          });
+          // layout Masonry after each image loads
+          $grid.imagesLoaded().progress( function() {
+            console.log('test');
+            $('.web-loader').fadeOut(500);
+            $grid.masonry('layout');
+          });
+        });
+    </script>
+  </body>
+</html>

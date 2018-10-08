@@ -1,0 +1,89 @@
+{
+    "collect": [{
+        "Title": "ToDo List",
+        "Category": "webdev",
+        "Cover": "https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/todo-cover.jpg",
+        "Description": "2018應徵Dcard Web Intern的題目。這題是花費我最久時間的一題，因為我除了功能上面，也對畫面做了一些 簡單的 UI 設計，加上 RWD 處理，讓手機也能正常使用這個網頁，做出了一個 算是比較完整的 Web Application。最初進入的時候會先要求輸入 Email，檢查是 否第一次使用，若第一次使用只要設定密碼後即可進入。畫面內包括基本的新 增刪除編輯 todos，更新完成狀態，還有額外的功能像是移動 todos 順序，新增 todos 分類，並用分類去篩選 todos，而第一次進入時還會有 tips 提示教您如何 使用這個網頁。",
+        "Info": [{
+            "Name": "參與工作",
+            "Content": "UI設計<br>前端工程<br>後端工程"
+        },{
+            "Name": "使用技能",
+            "Content": "HTML,CSS,JS<br>NodeJS"
+        },{
+            "Name": "線上Demo",
+            "Content": "<a href='https://todo.ms300k.com.tw'>https://todo.ms300k.com.tw</a>"
+        }],
+        "Content": "{rwdt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/todo-1.png https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/todo-2.png 登入 頁面}{rwdt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/todo-3.png https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/todo-4.png 使用者介面}"
+    },{
+        "Title": "Dcard 抽卡 reDesign",
+        "Category": "uidesign",
+        "Cover": "https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/dcard.png",
+        "Description": "這個專案是這次應徵Dcard暑期UI/UX實習設計的作業，挑一個Dcard APP的功能從設計角度上來改善。我選擇的是抽卡，目標是能提升使用者抽卡的誘因，並美化抽卡的UI介面。",
+        "Info": [{
+            "Name": "平台",
+            "Content": "Android"
+        },{
+            "Name": "參與工作",
+            "Content": "UI設計"
+        },{
+            "Name": "使用技能",
+            "Content": "Adobe Illustrator<br>Adobe After Effects"
+        }],
+        "Content": "{imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/dcard-1.png Dcard 抽卡流程/介面 reDesign}{lh 目標}{p 優化抽卡流程}{lh 問題分析}{p 在設計前詢問過大部分身邊的朋友，發現Dcard在大學生手機已經是和facebook跟instagram一樣的必備品了，但是有一大部分的朋友大多僅使用“討論區”的功能，Dcard最有特色的抽卡交友反而比較少使用。經過一些討論後，我猜想可能問題是出在Dcard的介面設計上，抽卡的流程比較沒有瀏覽討論區這麼明顯，可能容易讓使用者遺忘，因此嘗試解決這個問題。}{lh 解決概念}{p 將想要強調的東西放在明顯的地方，並提供一定程度的資訊誘使使用者嘗試這個功能。}{lh 解決步驟}{mh 首先以抽卡的流程來做分析}{p 目前的流程為進入首頁->進入側邊欄->抽卡->檢視今日對象。我認為第一個可以改善的部分是側邊欄。由於dcard在文章分類(例如：最新文章，熱門文章，收藏文章等)使用的架構是tabs，因此畫面上左右滑動會觸發切換tab，只有從最側邊滑入才會開啟側邊欄。這是一個合理的情境，但可能不是最好的情境。從去年開始，智慧型手機吹起了一股全面屏風潮，意即為18:9的螢幕，而這也意味著手機的header離使用者的距離越來越遠，尤其在單手操作的狀況下特別明顯，不論是從左側滑出或是點擊左上方都不甚理想。}{p 而再打開Dcard的側邊欄檢視，側邊欄的有七個連結，包括最上面的使用者資料、論壇、抽卡、朋友、信箱、說明、設定。而這其中我按照使用者使用頻率的方式來合併，認為可以合併成五個連結:}{list 論壇|信箱/朋友|抽卡|說明|使用者資料/設定}{p 信箱/朋友的部分，我認為使用者“純粹檢視朋友列表”的需求比較低，因為Dcard交友建立在信件往來，因此朋友列表在信箱列表上也可以得到相同的資訊，甚至信箱還會按照信件往來程度和日期做排序，對使用者的幫助更大，因此將這兩個連結合併，並把原本檢視朋友資料的功能併入信箱的個別信件頁面裡。}{p 而使用者資料/設定就是單純的把設定的層級往下一層，因為我認為設定中的功能不但不會常被使用，而且在使用者資料下找設定應該符合大多數的操作習慣。}{p 所以我們將七欄改為五欄後，選擇使用footer tabs當作新的navigator。而這個時候主角就回到抽卡上。經過這個改變後，抽卡的按鈕已經直接顯示在App螢幕上了，而不是待在側邊欄裡，成功達成第一個步驟。}{mh 吸引使用者注意}{p 在解決概念中我們提到，提供一定程度的資訊誘使使用者，但我們怎麼在在一個小小的footer tabs上達成這件事呢?最簡單，也可能是成效最好的做法，就是利用圖片。}{p 儘管Dcard的交友模式不僅靠照片，也靠大量的自我介紹來配對，但是不能否認的是的多數的人第一印象通常來自照片，因此我認為最容易想要讓使用者一探究竟的方式就是提供一個縮圖讓他預覽。當你進入app之後，不論瀏覽任何頁面都可以看到你未來的卡友在footer tabs上等著你，我認為這個互動比原先的漢堡式選單要來得親切的多，也更加的具裝飾性。}{p 因此整合上述的步驟，我們得到了下面這個原型：}{imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/dcard-2.png Footer Tabs Prototype}{2imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/dcard-3.png https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/dcard-4.gif 抽卡介面/流程 Prototype}{lh 結語}{p 使用者能夠在進入App後立即得到“抽卡”的這個提醒，這就是這次ReDesign的目的，畢竟Dcard抽卡是國內少見性質單純且概念有趣的交友模式，這點是任何一個線上論壇都比不過的，因此我覺得透過這個redesign將抽卡功能強化對Dcard這個App是正向的發展。}"
+    },{
+        "Title": "KKBOX Login reDesign",
+        "Category": "uidesign",
+        "Cover": "https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/kkbox.png",
+        "Description": "之前在練習UI設計遇到登入/註冊介面設計時，決定選擇一個企業的既有登入畫面改造，而最後選擇了KKBOX。一起來看看我做了什麼變化吧!",
+        "Info": [{
+            "Name": "平台",
+            "Content": "網站"
+        },{
+            "Name": "參與工作",
+            "Content": "UI設計"
+        },{
+            "Name": "使用技能",
+            "Content": "Adobe Illustrator<br>Adobe After Effects"
+        }],
+        "Content": "{imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/kkbox-1.png KKBOX Login reDesign}{lh 目標}{list 強化企業形象|優化網頁介面|增加註冊/登入之間轉場}{lh 問題分析}{p 我認為kkbox目前的登入頁面最大的問題出在沒有鮮明的企業形象。Kkbox是提供音樂串流服務的公司，而目前數位音樂的市場越來越大，kkbox已經不再是唯一的擁有者/提供者了，諸如spotify，apple music等，也是選項之一。而登入介面在我的眼中比較偏向一個宣傳的角色，而不是服務的角色。舉例來說，登入頁面像是在餐廳外面招攬客人的公關，音樂內容則是餐廳內的服務生，你不會期望服務生一直在餐廳內大呼小叫，但是公關也不可能在街頭彬彬有禮的拉客。現在網路有提供session和cookie的服務，可以記錄使用者登入狀態，因此大部分的時間使用者是不會用到登入頁面的，而大部分接觸到的使用者都是新用戶，因此我才會認為登入介面要向公關一樣，強而有力的推銷自己的產品。}{lh 解決概念}{p 使用比較強烈的設計氛圍強化使用者的第一印象}{lh 解決步驟}{mh 配色}{p 配色上，我選擇大量使用kkbox的標準藍色，因為我認為這是一個很容易被記住，且不容易和其他品牌相撞的顏色，簡單來說，我看到這個顏色就會想到kkbox。而背景的部分，圖片是來自於kkbox另外一個登入介面的底圖，但是該介面選擇使用半透明黑色遮罩，而我們這邊選擇半透明的藍色遮罩，使用者一進入頁面就要沈浸在這股藍色的氛圍內。}{imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/kkbox-2.png 背景&配色選擇}{mh 標語}{p 再來是標語的部分。前面提到，既然是攬客的公關，我希望標語能夠有非常好的穿透力，能夠讓使用者一眼記住。這裡我選擇的方法是使用粗黑體，並且頻繁的斷行，雖然可能會降低可讀性，但我發現如果標語內容簡短，這種斷行方式似乎能夠起到引導閱讀的作用，讓使用者不知不覺就讀完整句。}{imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/kkbox-3.png 普通標語(左側) vs 特殊斷行標語(右側)}{mh 轉場}{p 最後，來替介面加上一點轉場吧！如同我一再強調的，登入頁面是網站最不常被看見，但是最先被看見的頁面，因此我認為適度的華麗感是必要的，這裡的設計風格能夠讓使用者輕易的感覺出這間公司是不是一個年輕的企業。首先，我希望背景圖片能夠隨著使用者滑鼠移動而移動，給使用者一種窺探音樂寶庫的期待和驚喜感，而登入/註冊切換部分使用簡單地向右淡出，配合上背景圖片的移動，打造出的現代感遠遠勝過原有的登入畫面。}{p 最後的Prototype:}{imgt https://hanwang.ms300k.com.tw/img/ui-design/2/5.png KKBOX Login reDesign Prototype}{imgt https://hanwang.ms300k.com.tw/img/ui-design/2/4.gif KKBOX Login reDesign Prototype}{lh 結語}{p 通常UI設計上會有所謂的”60-30-10”規則，強調色只能佔頁面的配色10%。但在登入頁面上，我追求的不是最舒適、安全的設計，而使能夠搶走使用者目光的設計，因此這邊盡量在保持使用者合理的體驗和一些會讓使用者驚喜，覺得特別的亮點上取得平衡，讓使用者進入登入頁面既不會不知所措，又有人進入一段冒險的氣氛。}"
+    },{
+        "Title": "Ms.300K工作室網頁",
+        "Category": "webdev｜uidesign",
+        "Cover": "https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/ms300k.png",
+        "Description": "目前和大學同學接案的工作室的網頁，整個網頁的開發和維護都是由我來負責。上一個靜態版本使用ReactJS開發，目前線上版本使用NodeJS開發，架設於AWS上。",
+        "Info": [{
+            "Name": "平台",
+            "Content": "網站"
+        },{
+            "Name": "參與工作",
+            "Content": "UI設計<br>前端工程<br>後端工程"
+        },{
+            "Name": "使用技能",
+            "Content": "HTML,CSS,JS<br>NodeJS"
+        },{
+            "Name": "線上Demo",
+            "Content": "<a href='https://ms300k.com.tw/'>https://ms300k.com.tw/</a>"
+        }],
+        "Content": "{rwd https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/ms300k-1.png https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/ms300k-2.png}"
+    },{
+        "Title": "個人網站",
+        "Category": "webdev|uidesign",
+        "Cover": "https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/han-1.png",
+        "Description": "目前的個人網站，使用比較多線條和幾何圖形構成，尋求科技感和設計感的結合。",
+        "Info": [{
+            "Name": "平台",
+            "Content": "網站"
+        },{
+            "Name": "參與工作",
+            "Content": "UI設計<br>前端工程<br>後端工程"
+        },{
+            "Name": "使用技能",
+            "Content": "HTML,CSS,JS<br>NodeJS"
+        },{
+            "Name": "線上Demo",
+            "Content": "<a href='https://hanwang.ms300k.com.tw/'>https://hanwang.ms300k.com.tw/</a>"
+        }],
+        "Content": "{2imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/han-1.png https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/han-2.png 首頁設計}{2imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/han-3.png https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/han-4.png 分類列表}{imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/han-5.png 作品說明}"
+    }]
+}
