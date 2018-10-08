@@ -1,0 +1,10 @@
+<div class="web-loader">
+    <img src="/images/loading.svg" />
+</div>
+<script>
+    $(document).ready(function(){
+        $('body').imagesLoaded().progress( function() {
+            $('.web-loader').fadeOut(500);
+        });
+    });
+</script>

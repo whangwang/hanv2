@@ -458,11 +458,11 @@ body {
 }
 
 .web-loader{
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   z-index: 100;
-  background-color: #f4f3f1;
+  background-color: #EAEAEA;
 }
 
 .web-loader img{
