@@ -1,3 +1,8 @@
+a{
+    text-decoration: none;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
 #cateTitleSection{
     width: 100vw;
     height: 100vh;
@@ -17,4 +22,40 @@
 }
 #cateTitleSection>div>div>.decoButton button{
     width: 100%;
+}
+.mobileInfo{
+    display: none;
+}
+@media (max-width: 480px){
+    .cateTitle{
+        margin-top: 0px;
+    }
+    .cateNavbar{
+        display: none;
+    }
+    .grid-container{
+        width: calc( 100% - 33px );
+    }
+    .decoButton{
+        margin-bottom: 100px;
+    }
+    .mobileInfo{
+        display: block;
+        opacity: 100!important;
+        position: relative!important;
+        background-color: rgba(0, 0, 0, 0.8)!important;
+        left: -1px;
+    }
+    .grid-item img{
+        border: none;
+    }
+    .grid-item{
+        border: 1px solid gray;
+    }
+    .grid-item:hover img{
+        border: none;
+    }
+    .info:not(.mobileInfo){
+        display: none;
+    }
 }

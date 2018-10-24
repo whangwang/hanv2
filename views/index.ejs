@@ -112,7 +112,8 @@
             <div style="float: right;display: inline-block;width: calc( 80% - 150px );">
               <div class="cateTitle">關於&nbsp;&nbsp;我<hr></div>
               <div class="cateEngTitle">About Me</div>
-              <p style="font-size: 15px;margin-top: 30px;">嗨，我是王瀚，政大資訊科學系的學生。<br>主要接觸領域在網頁前後端開發、UI設計以及視覺設計。<br><br>程式方面，對於網頁開發部分特別有興趣，也有兩年的網頁學習/練習經驗跟一年的網頁開發。<br><br>設計方面，由於自己興趣的關係，從高中開始就陸續學習設計工具如PS,AI,大學後比較有對設計觀念的提升，開始協助學校活動做平面設計，並自己有練習學習標準字&Logo設計。而關於UI設計的部分從大二進新創公司實習後開始慢慢的成長，現在對於UI設計也有一定的敏感度。<br><br>如果對作品有任何疑問，或有想要合作、洽詢等，歡迎寄Email聯絡！</p>
+              <div class="aboutMeOuter"><p style="font-size: 15px;margin-top: 30px;">嗨，我是王瀚，政大資訊科學系的學生。<br>主要接觸領域在網頁前後端開發、UI設計以及視覺設計。<br><br>程式方面，對於網頁開發部分特別有興趣，也有兩年的網頁學習/練習經驗跟一年的網頁開發。<br><br>設計方面，由於自己興趣的關係，從高中開始就陸續學習設計工具如PS,AI,大學後比較有對設計觀念的提升，開始協助學校活動做平面設計，並自己有練習學習標準字&Logo設計。而關於UI設計的部分從大二進新創公司實習後開始慢慢的成長，現在對於UI設計也有一定的敏感度。<br><br>如果對作品有任何疑問，或有想要合作、洽詢等，歡迎寄Email聯絡！</p></div>
+              <div class="aboutMeShadow"></div>
               <a href="mailto:whangwang0430@gmail.com" class="emailLink">Email<svg version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 17 12" style="enable-background:new 0 0 17 12;" xml:space="preserve">
                   <path id="path" class="st0" d="M0,3.5c4.7-4.7,12.3-4.7,17,0L8.5,12L0,3.5z"/>
@@ -129,10 +130,17 @@
       $(document).on('click','.sectionContainer button',function(){
         window.location = "/list/"+$(this).attr('to');
       });
+      $(window).resize(function(){
+        if($(window).width()<1024)$('.aboutMeOuter').addClass('mobile');
+        else $('.aboutMeOuter').removeClass('mobile');
+      });
       $(document).ready(function() {
+        if($(window).width()<1024)$('.aboutMeOuter').addClass('mobile');
+        else $('.aboutMeOuter').removeClass('mobile');
 	      $('#fullpage').fullpage({
           scrollingSpeed: 1000,
           anchors: ['home', 'webdev', 'uidesign', 'graphic', 'typography', 'about'],
+          normalScrollElements: '.aboutMeOuter.mobile',
           onLeave: function(origin, destination, direction){
             if(origin.index==0){
               $('.decoCircle').addClass('huge');

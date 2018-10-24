@@ -57,3 +57,14 @@ body{
 .decoCircle{
     display: none;
 }
+@media (max-width: 480px){
+    .detailTitleBanner{
+        margin-top: 0px;
+    }
+    .cateTitle{
+        margin-top: 0px;
+    }
+    .detailContentContainer{
+        padding: 15px;
+    }
+}

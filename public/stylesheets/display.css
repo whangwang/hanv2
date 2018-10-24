@@ -135,3 +135,19 @@
       padding: 45px 0px 45px 0px;
     }
 }
+@media (max-width: 480px){
+    .detailTitle{
+        float: unset!important;
+        width: calc( 100% - 30px )!important;
+    }
+    .detailTitle>p{
+        width: 100%!important;
+    }
+    .detailInfo{
+        float: unset!important;
+        width: calc( 100% - 60px )!important;
+    }
+    .cateNavbar{
+        display: none;
+    }
+}
