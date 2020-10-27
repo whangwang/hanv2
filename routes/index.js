@@ -67,63 +67,22 @@ router.get('/detail/:id', function(req, res, next) {
 });
 
 function parser(input){
-    let eachLine = input.split('{');
-    let result = "";
-    for(let i = 0; i < eachLine.length; i++){
-      if(eachLine[i].trim()!=""){
-        let line = eachLine[i].split('}')[0];
-        let detector = line.split(' ');
-        let text = "";
-        switch(detector[0]){
+    var result = "";
+    for(let i = 0; i < input.length; i++){
+        switch(input[i].mode){
           case "img":
-            result+="<img src='"+detector[1]+"'></img>";
+            result+="<img src='"+input[i].img+"'></img>";
             break;
-          case "imgt":
-            text = "";
-            for(var j = 2;j < detector.length; j++)text+=(j==2)?detector[j]:" "+detector[j];
-            result+="<img src='"+detector[1]+"'></img><h5>"+text+"</h5>";
+          case "text":
+            result+="<p>"+input[i].text+"</p>";
             break;
-          case "2img":
-            result+='<div class="half-img"><img src="'+detector[1]+'"><img src="'+detector[1]+'"></div>';
+          case "imgtl":
+            result+=`<div class="imgtl"><div>${input[i].withTitle ? `<h4>${input[i].title}</h4>` : ``}<p>${input[i].text}</p></div><img src="${input[i].img}"/></div>`;
             break;
-          case "2imgt":
-            text = "";
-            for(var j = 3;j < detector.length; j++)text+=(j==3)?detector[j]:" "+detector[j];
-            result+='<div class="half-img"><img src="'+detector[1]+'"><img src="'+detector[2]+'"><h5>'+text+'</h5></div>';
-            break;
-          case "lh":
-            text = "";
-            for(var j = 1;j < detector.length; j++)text+=(j==1)?detector[j]:" "+detector[j];
-            result+='<h4>'+text+'</h4>';
-            break;
-          case "mh":
-            text = "";
-            for(var j = 1;j < detector.length; j++)text+=(j==1)?detector[j]:" "+detector[j];
-            result+='<h3>'+text+'</h3>';
-            break;
-          case "p":
-            text = "";
-            for(var j = 1;j < detector.length; j++)text+=(j==1)?detector[j]:" "+detector[j];
-            result+='<p>'+text+'</p>';
-            break;
-          case "list":
-            text = "";
-            let li="";
-            for(var j = 1;j < detector.length; j++)text+=(j==1)?detector[j]:" "+detector[j];
-            let list = text.split('|');
-            for(var j = 0;j < list.length;j++)li+="<li>"+list[j]+"</li>";
-            result+='<ul style="padding-left: 20px;font-weight: 400;">'+li+'</ul>';
-            break;
-          case "rwd":
-            result+="<div class='webview-display'><img src='"+detector[1]+"'></img><img src='"+detector[2]+"'></img></div>";
-            break;
-          case "rwdt":
-            text = "";
-            for(var j = 3;j < detector.length; j++)text+=(j==3)?detector[j]:" "+detector[j];
-            result+="<div class='webview-display'><img src='"+detector[1]+"'></img><img src='"+detector[2]+"'></img></div><h5>"+text+"</h5>";
+          case "imgtr":
+            result+=`<div class="imgtr"><img src="${input[i].img}"/><div>${input[i].withTitle ? `<h4>${input[i].title}</h4>` : ``}<p>${input[i].text}</p></div></div>`;
             break;
         }
-      }
     }
     return result;
 };

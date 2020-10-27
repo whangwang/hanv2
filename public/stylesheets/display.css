@@ -1,13 +1,12 @@
 .detailContent{
     width: 100%;
-    max-width: 800px;
-    padding: 45px 15px 45px 15px;
     margin: auto;
+    padding-bottom: 60px;
 }
   
 .detailContent img{
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    margin-left: 0;
 }
   
 .detailContent h5{
@@ -17,22 +16,87 @@
     margin-bottom: 30px;
     color: gray;
     font-weight: 800;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
  }
   
 .detailContent h4{
     font-size: 21px;
     font-weight: 800;
     color: black;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
   
-.detailContent p{
+.detailContent>p{
     font-weight: 400;
     line-height: 22.5px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+.detailContent ul{
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detailContent .imgtl{
+    margin-top: 120px;
+}
+
+.detailContent .imgtl div{
+    display: inline-block;
+    width: calc( 50% - 45px );
+    margin-left: 30px;
+    vertical-align: top;
+}
+
+.detailContent .imgtl h4{
+    margin-top: 0px;
+}
+
+.detailContent .imgtl img{
+    width: calc( 50% - 15px );
+    margin-left: 30px;
+}
+.detailContent .imgtr{
+    margin-top: 120px;
+}
+
+.detailContent .imgtr div{
+    display: inline-block;
+    width: calc( 50% - 45px );
+    margin-left: 30px;
+    vertical-align: top;
+}
+
+.detailContent .imgtr h4{
+    margin-top: 0px;
+}
+
+.detailContent .imgtr img{
+    width: calc( 50% - 15px );
+    margin-left: 0px;
 }
   
 .detailContent h2{
     font-size: 30px;
     font-weight: 800;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}  
+.detailContent h3{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
   
 .half-img{
@@ -131,21 +195,18 @@
       width: 100%;
       margin-left: 0px;
     }
-    .detailContent {
-      padding: 45px 0px 45px 0px;
-    }
 }
 @media (max-width: 480px){
     .detailTitle{
         float: unset!important;
-        width: calc( 100% - 30px )!important;
+        width: 100%!important;
     }
     .detailTitle>p{
         width: 100%!important;
     }
     .detailInfo{
         float: unset!important;
-        width: calc( 100% - 60px )!important;
+        width: calc( 100% - 30px )!important;
     }
     .cateNavbar{
         display: none;

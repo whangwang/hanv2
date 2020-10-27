@@ -12,8 +12,8 @@
     <span class="navPromptText"></span>
     <div class="navbar">
       <img class="select" description="首頁" to="home" src="/images/icon-main.svg" alt="">
-      <img description="網頁開發" to="webdev" src="/images/icon-coding.svg" alt="">
       <img description="介面設計" to="uidesign" src="/images/icon-ui.svg" alt="">
+      <img description="網頁開發" to="webdev" src="/images/icon-coding.svg" alt="">
       <img description="平面設計" to="graphic" src="/images/icon-design.svg" alt="">
       <img description="標準字設計" to="typography" src="/images/icon-typo.svg" alt="">
       <img description="關於我" to="about" src="/images/icon-about.svg" alt="">
@@ -27,6 +27,24 @@
               <img src="/images/circleLine.svg" alt="">
               <div class="scrollPrompt" to="webdev">
                 <p>作品集</p>
+                <svg version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 17 12" style="enable-background:new 0 0 17 12;" xml:space="preserve">
+                  <path id="path" class="st0" d="M0,3.5c4.7-4.7,12.3-4.7,17,0L8.5,12L0,3.5z"/>
+                </svg>
+              </div>
+          </div>
+      </div>
+      <div class="section">
+          <div class="sectionContainer new">
+            <img src="https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/inskeeper-thumbnail.jpg" alt="" class="catePreview">
+            <div class="cateTitle">介面&nbsp;&nbsp;設計<hr></div>
+            <div class="cateEngTitle">UI<br>Design</div>
+            <div class="decoButton">
+              <button to="uidesign">查看全部</button>
+              <div></div>
+            </div>
+            <div class="scrollPrompt" to="graphic" style="width: 100%; margin-top: 15vh;">
+                <p>平面設計</p>
                 <svg version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 17 12" style="enable-background:new 0 0 17 12;" xml:space="preserve">
                   <path id="path" class="st0" d="M0,3.5c4.7-4.7,12.3-4.7,17,0L8.5,12L0,3.5z"/>
@@ -51,24 +69,6 @@
               </svg>
             </div>
         </div>
-      </div>
-      <div class="section">
-          <div class="sectionContainer new">
-            <img src="/images/uidesign.png" alt="" class="catePreview">
-            <div class="cateTitle">介面&nbsp;&nbsp;設計<hr></div>
-            <div class="cateEngTitle">UI<br>Design</div>
-            <div class="decoButton">
-              <button to="uidesign">查看全部</button>
-              <div></div>
-            </div>
-            <div class="scrollPrompt" to="graphic" style="width: 100%; margin-top: 15vh;">
-                <p>平面設計</p>
-                <svg version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 17 12" style="enable-background:new 0 0 17 12;" xml:space="preserve">
-                  <path id="path" class="st0" d="M0,3.5c4.7-4.7,12.3-4.7,17,0L8.5,12L0,3.5z"/>
-                </svg>
-              </div>
-          </div>
       </div>
       <div class="section">
           <div class="sectionContainer new">
@@ -139,7 +139,7 @@
         else $('.aboutMeOuter').removeClass('mobile');
 	      $('#fullpage').fullpage({
           scrollingSpeed: 1000,
-          anchors: ['home', 'webdev', 'uidesign', 'graphic', 'typography', 'about'],
+          anchors: ['home', 'uidesign', 'webdev', 'graphic', 'typography', 'about'],
           normalScrollElements: '.aboutMeOuter.mobile',
           onLeave: function(origin, destination, direction){
             if(origin.index==0){

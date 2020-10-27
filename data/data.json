@@ -1,41 +1,52 @@
 {
     "collect": [{
-        "Title": "ToDo List",
-        "Category": "webdev",
-        "Cover": "https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/todo-cover.jpg",
-        "Description": "2018應徵Dcard Web Intern的題目。這題是花費我最久時間的一題，因為我除了功能上面，也對畫面做了一些 簡單的 UI 設計，加上 RWD 處理，讓手機也能正常使用這個網頁，做出了一個 算是比較完整的 Web Application。最初進入的時候會先要求輸入 Email，檢查是 否第一次使用，若第一次使用只要設定密碼後即可進入。畫面內包括基本的新 增刪除編輯 todos，更新完成狀態，還有額外的功能像是移動 todos 順序，新增 todos 分類，並用分類去篩選 todos，而第一次進入時還會有 tips 提示教您如何 使用這個網頁。",
-        "Info": [{
-            "Name": "參與工作",
-            "Content": "UI設計<br>前端工程<br>後端工程"
-        },{
-            "Name": "使用技能",
-            "Content": "HTML,CSS,JS<br>NodeJS"
-        },{
-            "Name": "線上Demo",
-            "Content": "<a href='https://todo.ms300k.com.tw'>https://todo.ms300k.com.tw</a>"
-        }],
-        "Content": "{rwdt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/todo-1.png https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/todo-2.png 登入 頁面}{rwdt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/todo-3.png https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/todo-4.png 使用者介面}"
-    },{
-        "Title": "Dcard 抽卡 reDesign",
+        "Title": "Plutus",
         "Category": "uidesign",
-        "Cover": "https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/dcard.png",
-        "Description": "這個專案是這次應徵Dcard暑期UI/UX實習設計的作業，挑一個Dcard APP的功能從設計角度上來改善。我選擇的是抽卡，目標是能提升使用者抽卡的誘因，並美化抽卡的UI介面。",
+        "Cover": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/plutus-thumbnail.jpg",
+        "Description": "Plutus是一款能夠協助您管理信用卡的App。不論是從最基礎的選擇信用卡，到優惠整理，甚至是依據您附近的店家和消費習慣做優惠推薦，這是一個能夠把您的信用卡價值發揮到最大、最貼切您的生活的工具。",
         "Info": [{
             "Name": "平台",
-            "Content": "Android"
+            "Content": "APP"
         },{
             "Name": "參與工作",
             "Content": "UI設計"
         },{
-            "Name": "使用技能",
-            "Content": "Adobe Illustrator<br>Adobe After Effects"
+            "Name": "使用工具",
+            "Content": "Figma"
+        },{
+            "Name": "Figma Link",
+            "Content": "<a href='https://reurl.cc/4mYM6j' target='_blank'>https://reurl.cc/4mYM6j</a>"
         }],
-        "Content": "{imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/dcard-1.png Dcard 抽卡流程/介面 reDesign}{lh 目標}{p 優化抽卡流程}{lh 問題分析}{p 在設計前詢問過大部分身邊的朋友，發現Dcard在大學生手機已經是和facebook跟instagram一樣的必備品了，但是有一大部分的朋友大多僅使用“討論區”的功能，Dcard最有特色的抽卡交友反而比較少使用。經過一些討論後，我猜想可能問題是出在Dcard的介面設計上，抽卡的流程比較沒有瀏覽討論區這麼明顯，可能容易讓使用者遺忘，因此嘗試解決這個問題。}{lh 解決概念}{p 將想要強調的東西放在明顯的地方，並提供一定程度的資訊誘使使用者嘗試這個功能。}{lh 解決步驟}{mh 首先以抽卡的流程來做分析}{p 目前的流程為進入首頁->進入側邊欄->抽卡->檢視今日對象。我認為第一個可以改善的部分是側邊欄。由於dcard在文章分類(例如：最新文章，熱門文章，收藏文章等)使用的架構是tabs，因此畫面上左右滑動會觸發切換tab，只有從最側邊滑入才會開啟側邊欄。這是一個合理的情境，但可能不是最好的情境。從去年開始，智慧型手機吹起了一股全面屏風潮，意即為18:9的螢幕，而這也意味著手機的header離使用者的距離越來越遠，尤其在單手操作的狀況下特別明顯，不論是從左側滑出或是點擊左上方都不甚理想。}{p 而再打開Dcard的側邊欄檢視，側邊欄的有七個連結，包括最上面的使用者資料、論壇、抽卡、朋友、信箱、說明、設定。而這其中我按照使用者使用頻率的方式來合併，認為可以合併成五個連結:}{list 論壇|信箱/朋友|抽卡|說明|使用者資料/設定}{p 信箱/朋友的部分，我認為使用者“純粹檢視朋友列表”的需求比較低，因為Dcard交友建立在信件往來，因此朋友列表在信箱列表上也可以得到相同的資訊，甚至信箱還會按照信件往來程度和日期做排序，對使用者的幫助更大，因此將這兩個連結合併，並把原本檢視朋友資料的功能併入信箱的個別信件頁面裡。}{p 而使用者資料/設定就是單純的把設定的層級往下一層，因為我認為設定中的功能不但不會常被使用，而且在使用者資料下找設定應該符合大多數的操作習慣。}{p 所以我們將七欄改為五欄後，選擇使用footer tabs當作新的navigator。而這個時候主角就回到抽卡上。經過這個改變後，抽卡的按鈕已經直接顯示在App螢幕上了，而不是待在側邊欄裡，成功達成第一個步驟。}{mh 吸引使用者注意}{p 在解決概念中我們提到，提供一定程度的資訊誘使使用者，但我們怎麼在在一個小小的footer tabs上達成這件事呢?最簡單，也可能是成效最好的做法，就是利用圖片。}{p 儘管Dcard的交友模式不僅靠照片，也靠大量的自我介紹來配對，但是不能否認的是的多數的人第一印象通常來自照片，因此我認為最容易想要讓使用者一探究竟的方式就是提供一個縮圖讓他預覽。當你進入app之後，不論瀏覽任何頁面都可以看到你未來的卡友在footer tabs上等著你，我認為這個互動比原先的漢堡式選單要來得親切的多，也更加的具裝飾性。}{p 因此整合上述的步驟，我們得到了下面這個原型：}{imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/dcard-2.png Footer Tabs Prototype}{2imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/dcard-3.png https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/dcard-4.gif 抽卡介面/流程 Prototype}{lh 結語}{p 使用者能夠在進入App後立即得到“抽卡”的這個提醒，這就是這次ReDesign的目的，畢竟Dcard抽卡是國內少見性質單純且概念有趣的交友模式，這點是任何一個線上論壇都比不過的，因此我覺得透過這個redesign將抽卡功能強化對Dcard這個App是正向的發展。}"
+        "Content": [{
+            "mode": "img",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/plutus.jpg"
+        }, {
+            "mode": "text",
+            "text": "Plutus是一款能夠協助您管理信用卡的App。不論是從最基礎的選擇信用卡，到優惠整理，甚至是依據您附近的店家和消費習慣做優惠推薦，這是一個能夠把您的信用卡價值發揮到最大、最貼切您的生活的工具。當初在發想時把目標族群鎖定在剛出社會的新鮮人，因此我們追求的是比較貼近年輕族群的設計語言，活潑的配色，更重要的是順暢快速的使用者流程和不過度裝飾過於複雜的介面，同時我們也將這個軟體定位為會頻繁使用的工具軟體，設計上我參考了不少同類型的軟體外，也盡可能的參照各家OS的設計準則，讓使用者不必花太多的時間學習如何上手。"
+        }, {
+            "mode": "imgtl",
+            "withTitle": true,
+            "title": "資訊架構",
+            "text": "進入App後，第一層架構我選擇採用置底Tab UI，以比較直覺方便的方式讓使用者選擇，同時清除明瞭的文字也會引導使用者找到自己想要的功能在哪層tab。如上圖所示，我們的架構設計是屬於廣且淺的，我們判斷使用者使用這個APP的頻率會比較高，偏向日常工具，因此我們希望大部分的步驟，尤其是在一些優惠搜尋或推薦的功能上，每次使用時需做的選擇和點擊能夠越少越好。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/plutus-arch.png"
+        }, {
+            "mode": "imgtr",
+            "withTitle": true,
+            "title": "主要功能",
+            "text": "<b>瀏覽儲存的信用卡資訊</b><br>在上方的卡片列表中，點擊向左或向右的按鈕來切換卡片，並在下方檢視這張信用卡的基本資訊&優惠內容。<br><br><b>新增卡片</b><br>使用者可透過點擊左上方的新增卡片按鈕加入一張信用卡<br><br><b>搜尋優惠</b><br>右上方的搜尋優惠點擊後會進入搜尋介面，讓使用者能在他目前所擁有的所有信用卡優惠中做搜尋<br><br><b>附近優惠資訊</b><br>下方顯示離目前位置最接近的幾筆優惠資訊，讓使用者可以知道如何消費最划算，充分發揮信用卡的價值，同時也會搭配推播，即使沒打開App也可以提醒使用者。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/plutus-feature.png"
+        }, {
+            "mode": "imgtl",
+            "withTitle": true,
+            "title": "卡片推薦",
+            "text": "<b>檢視熱門卡片</b><br>我們可以根據全部使用者新增卡片的紀錄來統計出最熱門的幾張卡片，再加上基本的篩選如年齡、性別等，來替使用者們做第一步的推薦<br><br><b>回答問題取得專屬推薦</b><br>按下”馬上開始尋找”按鈕後，App將會詢問您一系列的問題，並在最後根據您的答案來推薦最適合您的卡片，讓您得到最實用的優惠內容",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/plutus-recommand.png"
+        }]
     },{
-        "Title": "KKBOX Login reDesign",
+        "Title": "Ins.Keeper",
         "Category": "uidesign",
-        "Cover": "https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/kkbox.png",
-        "Description": "之前在練習UI設計遇到登入/註冊介面設計時，決定選擇一個企業的既有登入畫面改造，而最後選擇了KKBOX。一起來看看我做了什麼變化吧!",
+        "Cover": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/inskeeper-thumbnail.jpg",
+        "Description": "Ins.Keeper是一個保險組合的推薦網站，使用者可以透過兩個管道-量身規劃或精選組合取得推薦的保單內容，選定自己中意的保單後再透過系統和業務聯絡。精選組合中會讓使用者填寫自己的生日、性別、職業類別，以及在八種比較熱門的規劃目的中選擇一種，再透過這些問題推送熱門的保單給使用者。量身規劃的部分除了生日性別等基本資料外，還會詢問使用者想要的險種以及使用者在意的保單條件，我們稱之為”保單實驗室”(後面會再提到這部分)，最後推薦出幾份最合條件的保單讓使用者選擇。",
         "Info": [{
             "Name": "平台",
             "Content": "網站"
@@ -43,47 +54,213 @@
             "Name": "參與工作",
             "Content": "UI設計"
         },{
-            "Name": "使用技能",
-            "Content": "Adobe Illustrator<br>Adobe After Effects"
+            "Name": "使用工具",
+            "Content": "Figma, Zeplin"
+        },{
+            "Name": "Figma Link",
+            "Content": "<a href='https://reurl.cc/odm3A5' target='_blank'>https://reurl.cc/odm3A5</a>"
         }],
-        "Content": "{imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/kkbox-1.png KKBOX Login reDesign}{lh 目標}{list 強化企業形象|優化網頁介面|增加註冊/登入之間轉場}{lh 問題分析}{p 我認為kkbox目前的登入頁面最大的問題出在沒有鮮明的企業形象。Kkbox是提供音樂串流服務的公司，而目前數位音樂的市場越來越大，kkbox已經不再是唯一的擁有者/提供者了，諸如spotify，apple music等，也是選項之一。而登入介面在我的眼中比較偏向一個宣傳的角色，而不是服務的角色。舉例來說，登入頁面像是在餐廳外面招攬客人的公關，音樂內容則是餐廳內的服務生，你不會期望服務生一直在餐廳內大呼小叫，但是公關也不可能在街頭彬彬有禮的拉客。現在網路有提供session和cookie的服務，可以記錄使用者登入狀態，因此大部分的時間使用者是不會用到登入頁面的，而大部分接觸到的使用者都是新用戶，因此我才會認為登入介面要向公關一樣，強而有力的推銷自己的產品。}{lh 解決概念}{p 使用比較強烈的設計氛圍強化使用者的第一印象}{lh 解決步驟}{mh 配色}{p 配色上，我選擇大量使用kkbox的標準藍色，因為我認為這是一個很容易被記住，且不容易和其他品牌相撞的顏色，簡單來說，我看到這個顏色就會想到kkbox。而背景的部分，圖片是來自於kkbox另外一個登入介面的底圖，但是該介面選擇使用半透明黑色遮罩，而我們這邊選擇半透明的藍色遮罩，使用者一進入頁面就要沈浸在這股藍色的氛圍內。}{imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/kkbox-2.png 背景&配色選擇}{mh 標語}{p 再來是標語的部分。前面提到，既然是攬客的公關，我希望標語能夠有非常好的穿透力，能夠讓使用者一眼記住。這裡我選擇的方法是使用粗黑體，並且頻繁的斷行，雖然可能會降低可讀性，但我發現如果標語內容簡短，這種斷行方式似乎能夠起到引導閱讀的作用，讓使用者不知不覺就讀完整句。}{imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/ui-design/kkbox-3.png 普通標語(左側) vs 特殊斷行標語(右側)}{mh 轉場}{p 最後，來替介面加上一點轉場吧！如同我一再強調的，登入頁面是網站最不常被看見，但是最先被看見的頁面，因此我認為適度的華麗感是必要的，這裡的設計風格能夠讓使用者輕易的感覺出這間公司是不是一個年輕的企業。首先，我希望背景圖片能夠隨著使用者滑鼠移動而移動，給使用者一種窺探音樂寶庫的期待和驚喜感，而登入/註冊切換部分使用簡單地向右淡出，配合上背景圖片的移動，打造出的現代感遠遠勝過原有的登入畫面。}{p 最後的Prototype:}{imgt https://hanwang.ms300k.com.tw/img/ui-design/2/5.png KKBOX Login reDesign Prototype}{imgt https://hanwang.ms300k.com.tw/img/ui-design/2/4.gif KKBOX Login reDesign Prototype}{lh 結語}{p 通常UI設計上會有所謂的”60-30-10”規則，強調色只能佔頁面的配色10%。但在登入頁面上，我追求的不是最舒適、安全的設計，而使能夠搶走使用者目光的設計，因此這邊盡量在保持使用者合理的體驗和一些會讓使用者驚喜，覺得特別的亮點上取得平衡，讓使用者進入登入頁面既不會不知所措，又有人進入一段冒險的氣氛。}"
+        "Content": [{
+            "mode": "img",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/inskeeper.jpg"
+        }, {
+            "mode": "text",
+            "text": "Ins.Keeper是一個保險組合的推薦網站，使用者可以透過兩個管道-量身規劃或精選組合取得推薦的保單內容，選定自己中意的保單後再透過系統和業務聯絡。精選組合中會讓使用者填寫自己的生日、性別、職業類別，以及在八種比較熱門的規劃目的中選擇一種，再透過這些問題推送熱門的保單給使用者。量身規劃的部分除了生日性別等基本資料外，還會詢問使用者想要的險種以及使用者在意的保單條件，我們稱之為”保單實驗室”(後面會再提到這部分)，最後推薦出幾份最合條件的保單讓使用者選擇。<br><br>這個案件比較有挑戰性的部分是牽涉到許多保險方面的專業知識，因此在溝通過程中有很多意想不到的需求要考量，也產生了許多比較特別的UI設計，而這中間又要兼顧讓使用者能夠好理解輕易上手，是一個我認為學到不少實務經驗的業界案例。"
+        }, {
+            "mode": "img",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/inskeeper-guideline.png"
+        }, {
+            "mode": "text",
+            "text": "該案已經有原本的品牌形象設計，因此使用品牌配色為主，主要希望網站風格偏向專業且不失格調，在格局上雖然採用比較傳統的排版方式，但在陰影的選用上使用比較廣且淡的陰影，製造浮空感，並在ICON和元件設計上都以線條幾何風格為主，想要擺脫保險產品無聊老氣的形象。在選圖方面則注重帶入感，如首頁的選圖，希望能夠打中目標族群，讓他們覺得自己是適合這類產品的人，進而想了解更多。"
+        }, {
+            "mode": "imgtl",
+            "withTitle": true,
+            "title": "網站導覽",
+            "text": "導覽UI的選用，在第一層的架構我選擇使用置頂Header的方式，使用字重和顏色來區別選中的項目，並在Header上方加入裝飾線來延續網站整體的高雅感，而在”量身規劃”以及”精選組合”中，每個步驟之間切換時則是使用ICON搭配文字，讓使用者一目瞭然。ICON也同樣使用線條風格，搭配網站整體的設計語彙。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/inskeeper-navigation.png"
+        }, {
+            "mode": "imgtr",
+            "withTitle": true,
+            "title": "推薦列表",
+            "text": "推薦列表上，除了要顯示保單的各種條件外，業主希望能夠讓使用者方便比對各個保單之間的差異，因此偏好採用表格的方式，再加上使用者可以調整單位，也會影響到條件中的理賠金額，在排版上比較有挑戰一些。<br>最後我採用表格且固定header的方式，將保單基本資訊和選擇按鈕放入header，表格內已顯示金額為主，用tooltip的方式呈現備註，讓使用者在瀏覽保單條件同時也能方便查看基本資料、價格，甚至是選擇保單。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/inskeeper-list.png"
+        }, {
+            "mode": "imgtl",
+            "withTitle": true,
+            "title": "量身規劃",
+            "text": "量身規劃第一步使用者必須輸入基本資料外，要選擇自己希望的險種，業主希望能夠向使用者解釋險種相關的問答，幫助使用者更了解保險，這邊因為基本資料需要填寫的內容不多，所以我將版面劃分為二，右邊隨著使用者選擇不同險種更換內容，使用者可以即時透過右邊下拉選單選擇問題並檢視答案，保持在同一個畫面中而不用上下滑動。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/inskeeper-info.png"
+        }, {
+            "mode": "imgtr",
+            "withTitle": true,
+            "title": "保單實驗室",
+            "text": "保單實驗室是這個案子最特別的功能，業主希望把篩選條件透過介面設計讓使用者有”自己調配保單內容”的感覺，也因此取名為保單實驗室。<br>使用者進入實驗室後，可以看到有數個選項提供使用者選擇，透過點擊選中選項代表同意並且希望有這個條件，滑鼠移到右上角的問號圖示則能夠得到這個條件的更多說明。選項沒選中則代表不同意或不在乎，如果選項之間互斥則會呈現半透明無法點選。<br>畫面上方的商品數及最低金額都會隨著使用者選擇不同的條件而改變，因此使用者能夠透過嘗試點擊不同的選項來自由調配理想的內容和最低金額，並確保這些選項最後能夠篩選出商品。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/inskeeper-lab.png"
+        }, {
+            "mode": "imgtl",
+            "withTitle": true,
+            "title": "案例試算",
+            "text": "使用者在選擇一份保單後，會先進入案例試算的畫面，先模擬幾個案例來看能夠獲得多少理賠，滿意之後再送出訂單由業務和他聯絡處理後續事宜。<br>這裡主要的需求就是選擇不同的事件，因此可以推斷使用者會頻繁地在各事件裡來回切換，所以同樣採用下拉選單的方式處理，下面的內容隨著選中的事件改變而即時更新，列出理賠的總金額以及保單內每個保險理賠的金額即細項給使用者參考。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/inskeeper-calc.png"
+        }]
     },{
-        "Title": "Ms.300K工作室網頁",
-        "Category": "webdev｜uidesign",
-        "Cover": "https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/ms300k.png",
-        "Description": "目前和大學同學接案的工作室的網頁，整個網頁的開發和維護都是由我來負責。上一個靜態版本使用ReactJS開發，目前線上版本使用NodeJS開發，架設於AWS上。",
-        "Info": [{
-            "Name": "平台",
-            "Content": "網站"
-        },{
-            "Name": "參與工作",
-            "Content": "UI設計<br>前端工程<br>後端工程"
-        },{
-            "Name": "使用技能",
-            "Content": "HTML,CSS,JS<br>NodeJS"
-        },{
-            "Name": "線上Demo",
-            "Content": "<a href='https://ms300k.com.tw/'>https://ms300k.com.tw/</a>"
-        }],
-        "Content": "{rwd https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/ms300k-1.png https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/ms300k-2.png}"
-    },{
-        "Title": "個人網站",
+        "Title": "政大傳院博士班",
         "Category": "webdev|uidesign",
-        "Cover": "https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/han-1.png",
-        "Description": "目前的個人網站，使用比較多線條和幾何圖形構成，尋求科技感和設計感的結合。",
+        "Cover": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/comm-thumbnail.jpg",
+        "Description": "這個案子是透過實習時的同事介紹的，剛好也是我的母校政大傳院博士班希望把他們的網站從政大傳院裡面脫離出來變成自己的一個官網。於是我先經過一次會議確認需求後，檢視了原本在傳院官網底下的架構和功能，重新規劃出新的架構圖，然後做出設計稿確認，最後完成開發。",
         "Info": [{
             "Name": "平台",
             "Content": "網站"
         },{
             "Name": "參與工作",
-            "Content": "UI設計<br>前端工程<br>後端工程"
+            "Content": "網站開發, UI設計"
         },{
-            "Name": "使用技能",
-            "Content": "HTML,CSS,JS<br>NodeJS"
+            "Name": "使用工具",
+            "Content": "Figma, HTML+CSS+jQuery"
         },{
-            "Name": "線上Demo",
-            "Content": "<a href='https://hanwang.ms300k.com.tw/'>https://hanwang.ms300k.com.tw/</a>"
+            "Name": "網站",
+            "Content": "<a href='https://ccphd.nccu.edu.tw' target='_blank'>https://ccphd.nccu.edu.tw</a>"
         }],
-        "Content": "{2imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/han-1.png https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/han-2.png 首頁設計}{2imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/han-3.png https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/han-4.png 分類列表}{imgt https://s3-ap-northeast-1.amazonaws.com/ms300k-han/project-image/web/han-5.png 作品說明}"
+        "Content": [{
+            "mode": "img",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/comm.jpg"
+        }, {
+            "mode": "text",
+            "text": "這個案子是透過實習時的同事介紹的，剛好也是我的母校政大傳院博士班希望把他們的網站從政大傳院裡面脫離出來變成自己的一個官網。於是我先經過一次會議確認需求後，檢視了原本在傳院官網底下的架構和功能，重新規劃出新的架構圖，然後做出設計稿確認，最後完成開發。<br>我認為系所的網站除了功能性外，宣傳也是很重要的任務，配色上我採用傳院原本的logo色橘色當作副色，並搭配了一個比較穩重的主色深藍色，盡量把配色延伸到每個頁面，讓橘色成為焦點，以此建立比較具有整體性的形象和識別度。<br>後面選出了幾個比較有特色、值得介紹的設計，並且分析這個設計的特別之處和原因。"
+        }, {
+            "mode": "imgtl",
+            "withTitle": true,
+            "title": "首頁",
+            "text": "首頁使用圖片搭配大面積的logo，利用視覺帶給使用者強烈的第一印象，下方則依序陳列系所的特色、最新消息，以及更進一步的特色介紹如歷史背景等，用一個導覽員的方式向使用者介紹這個系所。<br><br>特色介紹區塊選用相關圖片搭配說明文字，讓有興趣的使用者可以詳細了解，想要大致瀏覽的人也可以看標題和圖片知道這個系所的特色。<br><br>圖片選用部分盡量選擇暖色調，搭配橘色維持配色的一體性。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/comm-index.png"
+        }, {
+            "mode": "imgtr",
+            "withTitle": true,
+            "title": "課程手冊",
+            "text": "課程手冊許多系所網站都是設計成直接下載pdf的方式，但大部分使用者往往只是想要找整份文件裡面其中的一兩條，卻要每次想看的時候都重複下載整份文件，十分不方便。<br>因此這邊設計成直接用線上瀏覽的方式檢視，並搭配目錄讓使用者可以快速找到需要的資訊，不必一定要先下載回來再慢慢翻，但如果有下載的需求當然也可以透過按鈕下載整份文件。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/comm-documents.png"
+        }, {
+            "mode": "imgtl",
+            "withTitle": true,
+            "title": "博士學生",
+            "text": "博士學生的需求除了展示學生的個人資訊外，也要陳列每個學生的專長，另外希望可以用搜尋和年級篩選的方式找到想要的學生。<br>這邊設計一個年級filter外，利用輸入框的方式讓使用者即時搜尋，關鍵字包含姓名、專長，不管是中英文皆可，更方便的找到想找的學生。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/comm-studs.png"
+        }]
+    },{
+        "Title": "MileLync",
+        "Category": "uidesign",
+        "Cover": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/milelync-thumbnail.jpg",
+        "Description": "MileLync是由CloudMile萬里雲公司委託我設計的平台，主要業務在提供客戶在平台中提出需求，再由服務人員回覆解決。此案是由對方提出架構，我按照他們提出的架構來設計畫面排版，讓畫面和流程更符合使用者的需求，同時改善畫面的美感。",
+        "Info": [{
+            "Name": "平台",
+            "Content": "網站"
+        },{
+            "Name": "參與工作",
+            "Content": "UI設計"
+        },{
+            "Name": "使用工具",
+            "Content": "Figma, Zeplin"
+        },{
+            "Name": "Figma Link",
+            "Content": "<a href='https://reurl.cc/VXnv15' target='_blank'>https://reurl.cc/VXnv15</a>"
+        }],
+        "Content": [{
+            "mode": "img",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/milelync.jpg"
+        }, {
+            "mode": "text",
+            "text": "MileLync是由CloudMile萬里雲公司委託我設計的平台，該平台提供針對GCP服務的諮詢，主要業務在提供客戶在平台中提出需求，再由服務人員回覆解決。此案是由對方提出架構，我按照他們提出的架構來設計畫面排版，讓畫面和流程更符合使用者的需求，同時改善畫面的美感。由於平台架構龐大，功能也不少，包含提問&回覆的介面、帳單列表的業務邏輯、使用者角色指派等，都是比較需要思考量身定做的介面。以下針對設計規範和幾個比較有特典的畫面來做介紹。"
+        }, {
+            "mode": "img",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/MileLync-styleguide.png"
+        }, {
+            "mode": "text",
+            "text": "配色以搭配Logo顏色為主，挑選深藍色為主色，橘色為輔色，並取各顏色深淺一階，共六色作為主要配色。準則上針對各元件進行定義，包括按鈕、選擇、各式輸入框等，讓工程師開發過程更加順暢。"
+        }, {
+            "mode": "imgtl",
+            "withTitle": true,
+            "title": "Home(客戶端)",
+            "text": "首頁針對客戶的各項產品狀態和帳單狀態進行總覽，上方展示客戶的帳單費用增減情況，除了用大面積的折線圖將資訊視覺化外，同時提供平均花費和上期花費，以及和上月份的比較。左下方利用圓餅圖顯示該專案在當月中使用的各項服務佔總費用的比例，讓客戶能夠一眼找到哪些產品花費的金額比較高。右下方則是顯示客戶提出的tickets的概覽，包含近三筆、提出/解決數等。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/milelync-home.png"
+        }, {
+            "mode": "imgtr",
+            "withTitle": true,
+            "title": "Support Centre(客服端)",
+            "text": "此處的需求是呈現tickets和其相關的資訊，考量到要顯示的資料不少，因此針對資訊做一些分類簡化，譬如編號的部分使用者只有在少數的情況下才用得上(例如通過人工聯繫方式時)，因此預設為隱藏，待使用者滑鼠移至上方再顯示。優先程度和狀態也以顏色標籤來區分，讓使用者能夠迅速排定處理的順序，且同時盡可能地把欄位留給標題。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/milelync-supportcentre.png"
+        }, {
+            "mode": "imgtl",
+            "withTitle": true,
+            "title": "Billing(客服端)",
+            "text": "帳單介面的業務邏輯比較複雜，會由客服端先上傳各項帳單後，先交由帳單人員審核完，再整包寄給客戶。客服人員先從此介面上傳檔案，完成後按下Approve按鈕，交由帳單人員確認，確認完成後再由客服人員按下傳送按鈕送給客戶。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/milelync-billing.png"
+        }, {
+            "mode": "imgtr",
+            "withTitle": true,
+            "title": "Create a Ticket(客戶端)",
+            "text": "客戶先選定要提問的產品後，填寫標題、問題內容、專案id和優先度，也可以選擇上傳檔案，完成編輯後提交給客服人員處理。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/milelync-createtickets.png"
+        }, {
+            "mode": "imgtl",
+            "withTitle": true,
+            "title": "Ticket(客服端)",
+            "text": "點進Ticket後，此處盡量將資訊呈現在同一個畫面中，避免在來回對話中還要上下滑動去檢視資訊，同時也是考量到這個是大多應用情境在辦公室中的系統，螢幕預期會比一般人來得大，因此採用左右兩側的分割設計，左側顯示ticket相關資訊和內容，右側提供兩端進行對話，解決問題。客服人員在此畫面除了回覆外，可以選擇發送時間、附加檔案、標記其他用戶等功能，藉此解決客戶問題。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/milelync-ticket.png"
+        }, {
+            "mode": "imgtr",
+            "withTitle": true,
+            "title": "FAQ(客戶端)",
+            "text": "FAQ針對各項主題整理問題，列表上顯示問題，展開後顯示問題的解答。亦有提供搜尋架構，輸入關鍵字後即時顯示搜尋結果。",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/milelync-faq.png"
+        }]
+    },{
+        "Title": "Ms.300K官方網站",
+        "Category": "webdev|uidesign",
+        "Cover": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/ms300k.jpg",
+        "Description": "Ms.300K是我和三位大學同學創立的接案工作室，主要承接網站、APP開發維護案件。此為我替工作室設計和開發的官方網站，展示接案經歷和作品集，並提供業主聯絡管道。",
+        "Info": [{
+            "Name": "平台",
+            "Content": "網站"
+        },{
+            "Name": "參與工作",
+            "Content": "UI設計, 網站開發"
+        },{
+            "Name": "使用工具",
+            "Content": "Figma, HTML+CSS+jQuery"
+        },{
+            "Name": "Figma Link",
+            "Content": "<a href='https://reurl.cc/LdeGG3' target='_blank'>https://reurl.cc/LdeGG3</a>"
+        }],
+        "Content": [{
+            "mode": "img",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/ms300k.jpg"
+        }, {
+            "mode": "text",
+            "text": "Ms.300K是我和三位大學同學創立的接案工作室，主要承接網站、APP開發維護案件。此為我替工作室設計和開發的官方網站，展示接案經歷和作品集，並提供業主聯絡管道。工作室主視覺也是由我設計，主要希望帶給業主新穎、活潑的第一印象，強調我們的產品不論在外觀或流程上都是非常現代且友善的，因此在網站設計中，除了視覺上帶來的驚喜外，也注重網站效能，不會讓過多的動畫影響干擾使用者體驗。以下展示設計稿畫面。"
+        }, {
+            "mode": "text",
+            "text": "首頁"
+        }, {
+            "mode": "img",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/ms300k-index.png"
+        }, {
+            "mode": "text",
+            "text": "作品集"
+        }, {
+            "mode": "img",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/ms300k-portfolio.png"
+        }, {
+            "mode": "text",
+            "text": "作品內容"
+        }, {
+            "mode": "img",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/ms300k-detail.png"
+        }, {
+            "mode": "text",
+            "text": "接案經歷"
+        }, {
+            "mode": "img",
+            "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/ms300k-timeLine.png"
+        }]
     }]
 }
