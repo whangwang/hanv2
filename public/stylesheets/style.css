@@ -6,7 +6,11 @@ body {
 
 * {
   cursor: none!important;
-  font-family: PingFangTC, sans-serif;
+  font-family: 'Montserrat', 'Noto Sans TC', PingFangTC, sans-serif;
+}
+
+p{
+    font-family: 'Noto Sans TC', PingFangTC, sans-serif;
 }
 
 *::selection {
@@ -204,7 +208,7 @@ body {
 }
 
 .cateTitle>hr{
-  margin-top: -18px;
+  margin-top: -14px;
   margin-bottom: 15px;
   border: 1px solid #DDAE2C;
 }
