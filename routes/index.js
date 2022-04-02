@@ -5,29 +5,29 @@ var request = require('request');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: '首頁 | 王瀚' });
+  res.render('index', { title: 'Home | Han Wang' });
 });
 
 router.get('/list/:cate', function(req, res, next) {
   let rdata = [];
-  let rtitle = "網頁&nbsp;&nbsp;開發";
-  let rengtitle = "Web<br>Development";
+  let rtitle = "網頁<br>開發";
+  let rengtitle = "Development";
   switch(req.param('cate')){
     case "webdev":
-      rtitle = "網頁&nbsp;&nbsp;開發";
-      rengtitle = "Web<br>Development";
+      rtitle = "產品開發";
+      rengtitle = "Development";
       break;
     case "uidesign":
-      rtitle = "介面&nbsp;&nbsp;設計";
-      rengtitle = "UI<br>Design";
+      rtitle = "介面設計";
+      rengtitle = "UI/UX Design";
       break;
     case "graphic":
-      rtitle = "平面&nbsp;&nbsp;設計";
-      rengtitle = "Graphic<br>Design";
+      rtitle = "平面設計";
+      rengtitle = "Graphic Design";
       break;
     case "typography":
-      rtitle = "標準字&nbsp;&nbsp;設計";
-      rengtitle = "Typography<br>Design";
+      rtitle = "標準字設計";
+      rengtitle = "Typography";
       break;
   }
   if(req.param('cate')=="typography" || req.param('cate')=="graphic"){
@@ -45,7 +45,7 @@ router.get('/list/:cate', function(req, res, next) {
             }
           });
         }
-        res.render('cateList', { title: rtitle.replace('&nbsp;&nbsp;','')+'作品列表 | 王瀚', cate: req.param('cate'), cateTitle: rtitle, cateEngTitle: rengtitle, data: rdata });
+        res.render('cateList', { title: rengtitle+' protfolio | Han Wang', cate: req.param('cate'), cateTitle: rtitle, cateEngTitle: rengtitle, data: rdata });
       }
     });
   }else{
@@ -57,13 +57,13 @@ router.get('/list/:cate', function(req, res, next) {
         })
       }
     }
-    res.render('cateList', { title: rtitle.replace('&nbsp;&nbsp;','')+'作品列表 | 王瀚', cate: req.param('cate'), cateTitle: rtitle, cateEngTitle: rengtitle, data: rdata });
+    res.render('cateList', { title: rengtitle+' protfolio | Han Wang', cate: req.param('cate'), cateTitle: rtitle, cateEngTitle: rengtitle, data: rdata });
   }
 });
 
 router.get('/detail/:id', function(req, res, next) {
     let td = data.collect[req.param('id')];
-    res.render('detail', { title: td.Title+' | 王瀚', data: td, content: parser(td.Content) });
+    res.render('detail', { title: td.Title+' | Han Wang', data: td, content: parser(td.Content) });
 });
 
 function parser(input){

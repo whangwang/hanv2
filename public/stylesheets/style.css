@@ -163,8 +163,6 @@ body {
 }
 
 .scrollPrompt>p{
-  writing-mode: vertical-rl;
-  text-orientation: upright;
   color: #DDAE2C;
   letter-spacing: 2px;
   font-weight: 800;
@@ -340,6 +338,12 @@ body {
 
 .emailLink>svg>path{
   fill: #DDAE2C;
+}
+
+.aboutMeOuter > p > br{
+    margin-top: 8px;
+    display: block;
+    content: ' ';
 }
 
 @media (max-width: 1024px) {

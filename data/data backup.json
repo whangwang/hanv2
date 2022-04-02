@@ -104,7 +104,7 @@
             "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/inskeeper-calc.png"
         }]
     },{
-        "Title": "CoC PhD Program Official Website",
+        "Title": "College of Communication PhD Program Official Website",
         "Category": "webdev|uidesign",
         "Cover": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/comm-thumbnail.jpg",
         "Description": "The Ph.D. program of College of Communication in National Chengchi University hopes to separate their website from the College and make it their own official website. So I first went through a meeting to confirm their requirements, reviewed the original architecture and functions under the official website, re-planned a new information architecture, then made a new visual design perposal, and finally completed the development.",
@@ -127,20 +127,20 @@
         }, {
             "mode": "text",
             "text": "The Ph.D. program of College of Communication in National Chengchi University hopes to separate their website from the College and make it their own official website.<br>So I first went through a meeting to confirm their requirements, reviewed the original architecture and functions under the official website, re-planned a new information architecture, then made a new visual design perposal, and finally completed the development."
-        }, {
-            "mode": "img",
+        }{
+            "mode": "imgtl",
             "withTitle": true,
             "title": "首頁",
             "text": "首頁使用圖片搭配大面積的logo，利用視覺帶給使用者強烈的第一印象，下方則依序陳列系所的特色、最新消息，以及更進一步的特色介紹如歷史背景等，用一個導覽員的方式向使用者介紹這個系所。<br><br>特色介紹區塊選用相關圖片搭配說明文字，讓有興趣的使用者可以詳細了解，想要大致瀏覽的人也可以看標題和圖片知道這個系所的特色。<br><br>圖片選用部分盡量選擇暖色調，搭配橘色維持配色的一體性。",
             "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/comm-index.png"
         }, {
-            "mode": "img",
+            "mode": "imgtr",
             "withTitle": true,
             "title": "課程手冊",
             "text": "課程手冊許多系所網站都是設計成直接下載pdf的方式，但大部分使用者往往只是想要找整份文件裡面其中的一兩條，卻要每次想看的時候都重複下載整份文件，十分不方便。<br>因此這邊設計成直接用線上瀏覽的方式檢視，並搭配目錄讓使用者可以快速找到需要的資訊，不必一定要先下載回來再慢慢翻，但如果有下載的需求當然也可以透過按鈕下載整份文件。",
             "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/comm-documents.png"
         }, {
-            "mode": "img",
+            "mode": "imgtl",
             "withTitle": true,
             "title": "博士學生",
             "text": "博士學生的需求除了展示學生的個人資訊外，也要陳列每個學生的專長，另外希望可以用搜尋和年級篩選的方式找到想要的學生。<br>這邊設計一個年級filter外，利用輸入框的方式讓使用者即時搜尋，關鍵字包含姓名、專長，不管是中英文皆可，更方便的找到想找的學生。",
@@ -174,37 +174,40 @@
             "mode": "img",
             "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/MileLync-styleguide.png"
         }, {
-            "mode": "img",
+            "mode": "text",
+            "text": "配色以搭配Logo顏色為主，挑選深藍色為主色，橘色為輔色，並取各顏色深淺一階，共六色作為主要配色。準則上針對各元件進行定義，包括按鈕、選擇、各式輸入框等，讓工程師開發過程更加順暢。"
+        }, {
+            "mode": "imgtl",
             "withTitle": true,
             "title": "Home(客戶端)",
             "text": "首頁針對客戶的各項產品狀態和帳單狀態進行總覽，上方展示客戶的帳單費用增減情況，除了用大面積的折線圖將資訊視覺化外，同時提供平均花費和上期花費，以及和上月份的比較。左下方利用圓餅圖顯示該專案在當月中使用的各項服務佔總費用的比例，讓客戶能夠一眼找到哪些產品花費的金額比較高。右下方則是顯示客戶提出的tickets的概覽，包含近三筆、提出/解決數等。",
             "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/milelync-home.png"
         }, {
-            "mode": "img",
+            "mode": "imgtr",
             "withTitle": true,
             "title": "Support Centre(客服端)",
             "text": "此處的需求是呈現tickets和其相關的資訊，考量到要顯示的資料不少，因此針對資訊做一些分類簡化，譬如編號的部分使用者只有在少數的情況下才用得上(例如通過人工聯繫方式時)，因此預設為隱藏，待使用者滑鼠移至上方再顯示。優先程度和狀態也以顏色標籤來區分，讓使用者能夠迅速排定處理的順序，且同時盡可能地把欄位留給標題。",
             "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/milelync-supportcentre.png"
         }, {
-            "mode": "img",
+            "mode": "imgtl",
             "withTitle": true,
             "title": "Billing(客服端)",
             "text": "帳單介面的業務邏輯比較複雜，會由客服端先上傳各項帳單後，先交由帳單人員審核完，再整包寄給客戶。客服人員先從此介面上傳檔案，完成後按下Approve按鈕，交由帳單人員確認，確認完成後再由客服人員按下傳送按鈕送給客戶。",
             "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/milelync-billing.png"
         }, {
-            "mode": "img",
+            "mode": "imgtr",
             "withTitle": true,
             "title": "Create a Ticket(客戶端)",
             "text": "客戶先選定要提問的產品後，填寫標題、問題內容、專案id和優先度，也可以選擇上傳檔案，完成編輯後提交給客服人員處理。",
             "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/milelync-createtickets.png"
         }, {
-            "mode": "img",
+            "mode": "imgtl",
             "withTitle": true,
             "title": "Ticket(客服端)",
             "text": "點進Ticket後，此處盡量將資訊呈現在同一個畫面中，避免在來回對話中還要上下滑動去檢視資訊，同時也是考量到這個是大多應用情境在辦公室中的系統，螢幕預期會比一般人來得大，因此採用左右兩側的分割設計，左側顯示ticket相關資訊和內容，右側提供兩端進行對話，解決問題。客服人員在此畫面除了回覆外，可以選擇發送時間、附加檔案、標記其他用戶等功能，藉此解決客戶問題。",
             "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/milelync-ticket.png"
         }, {
-            "mode": "img",
+            "mode": "imgtr",
             "withTitle": true,
             "title": "FAQ(客戶端)",
             "text": "FAQ針對各項主題整理問題，列表上顯示問題，展開後顯示問題的解答。亦有提供搜尋架構，輸入關鍵字後即時顯示搜尋結果。",
@@ -236,65 +239,28 @@
             "text": "Ms.300K is a outsourcing company founded by me and three university classmates, mainly take website and APP development cases.<br>This is the official website designed and will develop by me for the company, showing the experience and portfolio, also providing the contact channel for portential clients.<br>The main idea of the branding is hoping to give the client a novel and lively first impression, emphasizing that product build by us will be very modern and friendly in appearance and process."
         }, {
             "mode": "text",
-            "text": "Home"
+            "text": "首頁"
         }, {
             "mode": "img",
             "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/ms300k-index.png"
         }, {
             "mode": "text",
-            "text": "Portfolio"
+            "text": "作品集"
         }, {
             "mode": "img",
             "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/ms300k-portfolio.png"
         }, {
             "mode": "text",
-            "text": "Details"
+            "text": "作品內容"
         }, {
             "mode": "img",
             "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/ms300k-detail.png"
         }, {
             "mode": "text",
-            "text": "Experience"
+            "text": "接案經歷"
         }, {
             "mode": "img",
             "img": "https://ms300k-han.s3-ap-northeast-1.amazonaws.com/project-image/ui-design/ms300k-timeLine.png"
-        }]
-    },{
-        "Title": "Cloudmatrix",
-        "Category": "webdev|uidesign",
-        "Cover": "https://ms300k-han.s3.ap-northeast-1.amazonaws.com/project-image/ui-design/cloudmatrix-thumbnail.jpg",
-        "Description": "CloudMatrix is a subsidiary of GIGABYTE. When their facial recognition system was about to be sold in early 2020, I was an intern within the company, responsible for designing and developing the product's official website. Due to the relatively little experience in website design and development within the organization, after I formulate the website structure, I need to obtain sales documents from the business side, convert them into website content, extract page highlights, and finally be able to complete the presentation in the form of a website, that's where I found this case is challenging for.",
-        "Info": [{
-            "Name": "Platform",
-            "Content": "Website"
-        },{
-            "Name": "Responsibility",
-            "Content": "UI/UX Design, Front-end Development"
-        },{
-            "Name": "Tools",
-            "Content": "Figma, Vue"
-        },{
-            "Name": "Figma Link",
-            "Content": "<a href='https://reurl.cc/rQmalO' target='_blank'>https://reurl.cc/rQmalO</a>"
-        }],
-        "Content": [{
-            "mode": "img",
-            "img": "https://ms300k-han.s3.ap-northeast-1.amazonaws.com/project-image/ui-design/cloudmatrix.jpg"
-        }, {
-            "mode": "text",
-            "text": "CloudMatrix is a subsidiary of GIGABYTE. When their facial recognition system was about to be sold in early 2020, I was an intern within the company, responsible for designing and developing the product's official website.<br>Due to the relatively little experience in website design and development within the organization, after I formulate the website structure, I need to obtain sales documents from the business side, convert them into website content, extract page highlights, and finally be able to complete the presentation in the form of a website, that's where I found this case is challenging for.<br>In the interface design, the image I want to convey is lively, friendly, but professional. Therefore, in addition to show of the function and performance, the content of the website also has many explanatory paragraphs, which makes even managers or buyers who are not familiar with AI technology can be able to understand the product, and clearly know the advantages of using this solution. Visually, a large number of pictures are used to balance the amount of text, and the sense of technology is packaged in a light way, with approach such as shadow, color scheme, glowing, mack sure is neither too heavy and boring, nor does it appear Unprofessional."
-        }, {
-            "mode": "text",
-            "text": "Home"
-        }, {
-            "mode": "img",
-            "img": "https://ms300k-han.s3.ap-northeast-1.amazonaws.com/project-image/ui-design/cloudmatrix-1.jpg"
-        }, {
-            "mode": "text",
-            "text": "GFaceManager"
-        }, {
-            "mode": "img",
-            "img": "https://ms300k-han.s3.ap-northeast-1.amazonaws.com/project-image/ui-design/cloudmatrix-2.jpg"
         }]
     }]
 }

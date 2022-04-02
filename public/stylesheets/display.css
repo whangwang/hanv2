@@ -40,6 +40,12 @@
     margin-bottom: 60px;
 }
 
+.detailContent p>br{
+    display: block;
+    content: ' ';
+    margin-top: 15px;
+}
+
 
 .detailContent ul{
     max-width: 780px;
